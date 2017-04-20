@@ -15,8 +15,6 @@ mattermost:
     DB_HOST: postgres
   external_links:
   - ${postgres_link}:postgres
-  ports:
-    - ${mattermost_port}:80
   labels:
     io.rancher.sidekicks: mattermost-datavolume
     io.rancher.container.pull_image: always
